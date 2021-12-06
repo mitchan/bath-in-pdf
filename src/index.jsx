@@ -29,13 +29,12 @@ const MyDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
+        <h1>Unicode</h1>
         <Text>0 {BAHT}</Text>
       </View>
       <View style={styles.section}>
+        <h1>Intl NumberFormat</h1>
         <Text>{formatter.format(0)}</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>&#3647;&#xE3F;</Text>
       </View>
     </Page>
   </Document>
