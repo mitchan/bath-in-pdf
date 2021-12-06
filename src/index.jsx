@@ -24,17 +24,17 @@ const formatter = new Intl.NumberFormat("th-TH", {
   maximumFractionDigits: 0,
 });
 
+const price = formatter.format(100);
+
 // Create Document Component
 const MyDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
-        <h1>Unicode</h1>
         <Text>0 {BAHT}</Text>
       </View>
       <View style={styles.section}>
-        <h1>Intl NumberFormat</h1>
-        <Text>{formatter.format(0)}</Text>
+        <Text>{price}</Text>
       </View>
     </Page>
   </Document>
